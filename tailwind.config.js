@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -10,7 +11,7 @@ export default {
     },
   },
   plugins: [
-    require('daisyui', require("tailgrids/plugin")),
+    require('daisyui'), require("tailgrids/plugin")
   ],
   daisyui: {
     themes: [
