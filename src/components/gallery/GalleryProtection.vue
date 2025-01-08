@@ -48,4 +48,8 @@ const validateAndSubmit = () => {
   background-color: #340534;
   color: white;
 }
+
+button:focus {
+  padding: 0.5rem;
+}
 </style>
