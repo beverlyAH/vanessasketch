@@ -22,6 +22,7 @@ header {
   height: 12vh;
   display: flex;
   justify-content: center;
+  margin-top: 0.75rem;
 }
 
 #mobile-nav {
