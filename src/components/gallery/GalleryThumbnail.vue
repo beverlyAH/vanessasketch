@@ -37,17 +37,13 @@ const props = defineProps([
 ]);
 
 const thumbnailSrc = computed(() => {
-  return new URL(
-    `/gallery/thumbnails/${props.category}/${props.thumbnail}`,
-    import.meta.url
-  ).href;
+  const path = new URL("/gallery/thumbnails/", import.meta.url);
+  return `${path}/${props.category}/${props.thumbnail}`;
 }).value;
 
 const fullImageSrc = computed(() => {
-  return new URL(
-    `/gallery/full/${props.category}/${props.file}`,
-    import.meta.url
-  ).href;
+  const path = new URL("/gallery/full/", import.meta.url);
+  return `${path}/${props.category}/${props.file}`;
 }).value;
 </script>
 
