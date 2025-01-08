@@ -19,6 +19,7 @@ const goHome = () => {
 
 <style scoped>
 header {
+  padding-top: 0.75rem;
   height: 12vh;
   display: flex;
   justify-content: center;
