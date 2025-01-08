@@ -10,7 +10,7 @@ export default {
     },
   },
   plugins: [
-    import('daisyui', import("tailgrids/plugin")),
+    require('daisyui', require("tailgrids/plugin")),
   ],
   daisyui: {
     themes: [
