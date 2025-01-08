@@ -4,6 +4,7 @@
       class="header-logo align-self-center"
       src="../../assets/vanessasketch_logo_mobile.png"
       alt="Vanessa Cohen - illustration and concept art"
+      @click="$emit('go-home')"
     />
     <ul class="menu bg-base-100 rounded-box">
       <li>
@@ -40,6 +41,10 @@
     </ul>
   </div>
 </template>
+
+<script setup>
+const emit = defineEmits(["go-home"]);
+</script>
 
 <style scoped>
 .menu {

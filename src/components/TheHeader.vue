@@ -1,13 +1,20 @@
 <template>
   <header class="bg-primary-color header">
-    <mobile-nav id="mobile-nav"></mobile-nav>
-    <nav-menu id="fullscreen-nav"></nav-menu>
+    <mobile-nav id="mobile-nav" @go-home="goHome"></mobile-nav>
+    <nav-menu id="fullscreen-nav" @go-home="goHome"></nav-menu>
   </header>
 </template>
 
 <script setup>
 import MobileNav from "./navigation/MobileNav.vue";
 import NavMenu from "./navigation/NavMenu.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const goHome = () => {
+  router.push("/portfolio");
+};
 </script>
 
 <style scoped>

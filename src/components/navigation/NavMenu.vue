@@ -5,6 +5,7 @@
         class="header-logo"
         src="../../assets/vanessasketch_logo.png"
         alt="Vanessa Cohen - illustration and concept art"
+        @click="$emit('go-home')"
       />
     </div>
     <div class="flex-none">
@@ -46,6 +47,8 @@
 </template>
 
 <script setup>
+import { defineEmits } from "vue";
+const emit = defineEmits(["go-home"]);
 </script>
 
 <style scoped>
