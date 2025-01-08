@@ -1,0 +1,50 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #220022;
+  --secondary-color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  
+  a:hover, button:hover {
+    color: #87d37c;
+  }
+
+  
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--primary-color);
+  }
+
+  body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3rem;
+    width: 100vw;
+    text-align: center;
+  }
+
+}
