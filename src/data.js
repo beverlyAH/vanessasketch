@@ -295,7 +295,7 @@ export default {
       {
         id: new Date().toISOString(),
         fileThumbnail: 'Valentine-_Prop_BoxofChocolates-150x150.png',
-        fileFullSize: 'Valentine-_Prop_BoxofChocolates',
+        fileFullSize: 'Valentine-_Prop_BoxofChocolates.png',
         title: 'Valentine Prop',
         date: '2023',
         description: 'Box of Chocolates'
