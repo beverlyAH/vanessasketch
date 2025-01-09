@@ -32,7 +32,7 @@
 <style scoped>
 .fullscreen {
   @media screen and (max-width: 768px) {
-    margin-top: 8vh;
+    margin-top: 10vh;
     overflow-wrap: break-word;
   }
 }

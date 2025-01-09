@@ -40,6 +40,7 @@ import PortfolioCard from "./PortfolioCard.vue";
   padding: 10px;
 
   @media screen and (max-width: 768px) {
+    margin-top: 13vh;
     flex-direction: column;
     align-items: center;
   }
