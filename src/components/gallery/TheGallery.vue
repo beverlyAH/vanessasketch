@@ -61,6 +61,13 @@ const galleryDescription = GALLERY.descriptions[category];
 </script>
 
 <style scoped>
+#gallery {
+  margin-top: 5rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 6.5rem;
+  }
+}
 h1 {
   text-transform: capitalize;
 }
